@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Товар | By Mansur</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="index.html">By Mansur</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html#new" class="nav-link">Новое</a></li>
+        <li><a href="index.html#hoodies" class="nav-link">Худи</a></li>
+        <li><a href="index.html#jeans" class="nav-link">Джинсы</a></li>
+        <li><a href="index.html#footwear" class="nav-link">Обувь</a></li>
+        <li><a href="index.html#sale" class="nav-link">Скидки</a></li>
+        <li><button class="btn">Регистрация</button></li>
+      </ul>
+    </nav>
+
+    <section
+      class="section__container"
+      style="padding-top: 8rem; max-width: 1200px"
+    >
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: start;
+        "
+      >
+        <div>
+          <img
+            id="product-img"
+            src=""
+            alt="Товар"
+            style="
+              width: 100%;
+              border-radius: 1rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            "
+          />
+        </div>
+
+        <div>
+          <h1
+            id="product-title"
+            style="font-size: 3rem; margin-bottom: 1rem"
+          ></h1>
+          <div
+            id="product-price"
+            style="
+              font-size: 2.5rem;
+              font-weight: 800;
+              color: var(--text-dark);
+              margin: 1.5rem 0;
+            "
+          ></div>
+          <div
+            id="product-desc"
+            style="
+              font-size: 1.2rem;
+              color: var(--text-light);
+              line-height: 1.8;
+              margin-bottom: 2rem;
+            "
+          >
+            По поводу размера,наличия товара и тд пиши в Инсту @mnsureee!
+          </div>
+          <button
+            class="btn"
+            id="buy-btn"
+            style="padding: 1rem 2.5rem; font-size: 1.3rem"
+          >
+            Купить сейчас
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo"><a href="#">By Mansur</a></div>
+          <p>Дополните свой стиль оригинальной одеждой от нас!</p>
+          <ul class="footer__socials">
+            <li>
+              <a href="https://www.instagram.com/mnsureee/"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Мы</h4>
+          <ul class="footer__links">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Связь с нами</a></li>
+            <li><a href="#">Поддержка</a></li>
+            <li><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Наши ссылки</h4>
+          <ul class="footer__links">
+            <li><a href="#">Расположение</a></li>
+            <li><a href="#">Отслеживание заказов</a></li>
+            <li><a href="#">Размеры</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Права</h4>
+          <ul class="footer__links">
+            <li><a href="#">Условия Использования</a></li>
+            <li><a href="#">Политика Конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 By Mansur. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const products = {
+        "maison-margiela-gats": {
+          title: "Maison Margiela Gats",
+          price: "330$",
+          img: "./fotki/2559883355e3e22541507e9220e82b18.jpg",
+        },
+        "givenchy-shark-hoodie": {
+          title: "Givenchy Shark hoodie",
+          price: "450$",
+          img: "./fotki/12098321-BLACK-febd3e30-.webp",
+        },
+
+        "acne-studios": {
+          title: "Acne Studios",
+          price: "300$",
+          img: "./fotki/givenchy",
+        },
+
+        givenchy: {
+          title: "Givenchy hoodie",
+          price: "350$",
+          img: "./fotki/givenchy",
+        },
+
+        "rick-owens-jeans": {
+          title: "Rick Owens AA 2001 jeans",
+          price: "2200$",
+          img: "./fotki/NNJENS.jpg",
+        },
+
+        "maison-margiela-gats": {
+          title: "Maison Margiela Gats",
+          price: "330$",
+          img: "./fotki/2559883355e3e22541507e9220e82b18.jpg",
+        },
+        cdg: {
+          title: "Comme des Garcons",
+          price: "250$",
+          img: "./fotki/cdg.jpg",
+        },
+        "number-nine-tshirt": {
+          title: "Number Nine Tshirt",
+          price: "450$",
+          img: "./fotki/nn.webp",
+        },
+        "givenchy-shark-hoodie": {
+          title: "Givenchy Shark hoodie",
+          price: "450$",
+          img: "./fotki/12098321-BLACK-febd3e30-.webp",
+        },
+        "acne-studios": {
+          title: "Acne Studios",
+          price: "300$",
+          img: "./fotki/1243977_01.jpg.webp",
+        },
+
+        HBA: {
+          title: "HOODBYAIR",
+          price: "400$",
+          img: "./fotki/hba.webp",
+        },
+        "dior-homme-jeans": {
+          title: "Dior Homme AW 2004 jeans",
+          price: "1700$",
+          img: "./fotki/hedi.jpg",
+        },
+        "rick-owens-jeans": {
+          title: "Rick Owens AA 2001 jeans",
+          price: "2200$",
+          img: "./fotki/NNJENS.jpg",
+        },
+        "saint-laurent-shoes": {
+          title: "Saint Laurent",
+          price: "1200$",
+          img: "./fotki/luxury-men-saint-laurent-paris-used-shoes-p930794-003.jpg",
+        },
+        "nike-airforce-high": {
+          title: "Nike Airforce low 07 high",
+          price: "150$",
+          img: "./fotki/19896991_44628600_1000.jpg.webp",
+        },
+        "giuseppe-zanotti-kid-cudi": {
+          title: "Kid Cudi x Giuseppe Zanotti",
+          price: "1200$",
+          img: "./fotki/giuseppe-zanotti-black-kid-cudi-high-top-trainers-product-0-075273864-normal.webp",
+        },
+        "ralph-lauren-shoes": {
+          title: "Ralph Lauren",
+          price: "120$",
+          img: "./fotki/tapki.jpg",
+        },
+        "gucci-slippers": {
+          title: "Gucci Slippers",
+          price: "220$",
+          img: "./fotki/31Oj-s0ZkNL._AC_UY1000_.jpg",
+        },
+        "givenchy-tyson": {
+          title: "Givenchy Tyson",
+          price: "720$",
+          img: "./fotki/c4815fccab6e2b4d1c9507c622ef39e1.jpg",
+        },
+        "chrome-hearts-sale": {
+          title: "Chrome Hearts",
+          price: "100$",
+          img: "./fotki/chrome.jpg",
+        },
+        "bape-sale": {
+          title: "a Bathing Ape",
+          price: "150$",
+          img: "./fotki/bape.jpg",
+        },
+        "nike-airforce-sale": {
+          title: "Nike Airforce low 07",
+          price: "120$",
+          img: "./fotki/force 1.png",
+        },
+        "ysl-sale": {
+          title: "Yves Saint Laurent",
+          price: "100$",
+          img: "./fotki/yls.jpg",
+        },
+
+        "maison-margiela-gats": {
+          title: "Maison Margiela Gats",
+          price: "330$",
+          img: "./fotki/2559883355e3e22541507e9220e82b18.jpg",
+        },
+        cdg: {
+          title: "Comme des Garcons",
+          price: "250$",
+          img: "./fotki/cdg.jpg",
+        },
+        "number-nine-tshirt": {
+          title: "Number Nine Tshirt",
+          price: "450$",
+          img: "./fotki/nn.webp",
+        },
+
+        "givenchy-shark-hoodie": {
+          title: "Givenchy Shark hoodie",
+          price: "450$",
+          img: "./fotki/12098321-BLACK-febd3e30-.webp",
+        },
+        givenchy: {
+          title: "Gucci Hoodie",
+          price: "350$",
+          img: "./fotki/blindforl.jpg",
+        },
+        "acne-studios": {
+          title: "Acne Studios",
+          price: "300$",
+          img: "./fotki/1243977_01.jpg.webp",
+        },
+
+        "dior-homme-jeans": {
+          title: "Dior Homme AW 2004 jeans",
+          price: "1700$",
+          img: "./fotki/hedi.jpg",
+        },
+        "rick-owens-jeans": {
+          title: "Rick Owens AA 2001 jeans",
+          price: "2200$",
+          img: "./fotki/NNJENS.jpg",
+        },
+
+        "saint-laurent-shoes": {
+          title: "Saint Laurent",
+          price: "1200$",
+          img: "./fotki/luxury-men-saint-laurent-paris-used-shoes-p930794-003.jpg",
+        },
+        "nike-airforce-high": {
+          title: "Nike Airforce low 07 high",
+          price: "150$",
+          img: "./fotki/19896991_44628600_1000.jpg.webp",
+        },
+        "giuseppe-zanotti-kid-cudi": {
+          title: "Kid Cudi x Giuseppe Zanotti",
+          price: "1200$",
+          img: "./fotki/giuseppe-zanotti-black-kid-cudi-high-top-trainers-product-0-075273864-normal.webp",
+        },
+        "ralph-lauren-shoes": {
+          title: "Ralph Lauren",
+          price: "120$",
+          img: "./fotki/tapki.jpg",
+        },
+        "gucci-slippers": {
+          title: "Gucci Slippers",
+          price: "220$",
+          img: "./fotki/31Oj-s0ZkNL._AC_UY1000_.jpg",
+        },
+        "givenchy-tyson": {
+          title: "Givenchy Tyson",
+          price: "720$",
+          img: "./fotki/c4815fccab6e2b4d1c9507c622ef39e1.jpg",
+        },
+
+        "chrome-hearts-sale": {
+          title: "Chrome Hearts",
+          price: "100$",
+          img: "./fotki/chrome.jpg",
+        },
+        "bape-sale": {
+          title: "a Bathing Ape",
+          price: "150$",
+          img: "./fotki/bape.jpg",
+        },
+        "nike-airforce-sale": {
+          title: "Nike Airforce low 07",
+          price: "120$",
+          img: "./fotki/force 1.png",
+        },
+        "ysl-sale": {
+          title: "Yves Saint Laurent",
+          price: "100$",
+          img: "./fotki/yls.jpg",
+        },
+        "givenchy-star-tshirt": {
+          title: "Givenchy Star Tshirt",
+          price: "160$",
+          img: "./fotki/givenchy-star-t-shirt-p41047-46956_image.jpg",
+        },
+
+        bberry: {
+          title: "Burberry",
+          price: "600$",
+          img: "./fotki/bberry.jpg",
+        },
+
+        ax: {
+          title: "Armani Exchange jeans",
+          price: "400$",
+          img: "./fotki/ax.jpg",
+        },
+
+        ralphh: {
+          title: "Ralph Lauren hoodie",
+          price: "125$",
+          img: "./fotki/ralphh.JPG",
+        },
+        "golden-goose-sneakers": {
+          title: "Golden Goose sneakers",
+          price: "140$",
+          img: "./fotki/golden.webp",
+        },
+      };
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+
+      const item = products[id];
+
+      if (item) {
+        document.getElementById("product-title").textContent = item.title;
+        document.getElementById("product-price").textContent = item.price;
+        document.getElementById("product-img").src = item.img;
+        document.getElementById("product-img").alt = item.title;
+      } else {
+        document.getElementById("product-title").textContent =
+          "Товар не найден";
+      }
+
+      document.getElementById("buy-btn").addEventListener("click", () => {
+        window.open("https://www.instagram.com/mnsureee/", "_blank");
+      });
+    </script>
+
+    <script>
+      // Загружаем базу из JSON
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((products) => {
+          const urlParams = new URLSearchParams(window.location.search);
+          const id = urlParams.get("id");
+
+          const item = products[id];
+
+          if (item) {
+            document.getElementById("product-title").textContent = item.title;
+            document.getElementById("product-price").textContent = item.price;
+            document.getElementById("product-img").src = item.img;
+            document.getElementById("product-img").alt = item.title;
+            document.getElementById("product-desc").innerHTML = item.desc;
+          } else {
+            document.getElementById("product-title").textContent =
+              "Товар не найден";
+            document.getElementById("product-desc").innerHTML =
+              "По поводу размера, наличия товара и т.д. пиши в Инсту @mnsureee!";
+          }
+        })
+        .catch((error) => {
+          console.error("Ошибка загрузки базы:", error);
+          document.getElementById("product-title").textContent =
+            "Ошибка загрузки";
+        });
+
+      document.getElementById("buy-btn").addEventListener("click", () => {
+        window.open("https://www.instagram.com/mnsureee/", "_blank");
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
